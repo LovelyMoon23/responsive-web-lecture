@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 레이아웃</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            /* width: 960px; */
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .header {
+            width: 100%;
+            /* width: 960px; */
+            height: 100px;
+            background-color: tomato;
+        }
+
+        .main {
+            float: left;
+            padding: 10%;
+            /* width와 너비는 부모의 width에 따라 결정된다 */
+            width: 67%;
+            /* 640/960*100 */
+            /* width: 640px; */
+            height: 300px;
+            background-color: orange;
+        }
+
+        .aside {
+            float: right;
+            padding: 10%;
+            /* width와 너비는 부모의 width에 따라 결정된다 */
+            width: 33%;
+            /* width: 640px; */
+            height: 300px;
+            background-color: purple;
+        }
+
+        .footer {
+            clear: both;
+            width: 100%;
+            /* width: 960px; */
+            height: 100px;
+            background-color: violet;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">container</div>
+    <div class="header">header</div>
+    <div class="main">main</div>
+    <div class="aside">aside</div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
